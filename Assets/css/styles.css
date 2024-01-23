@@ -1,0 +1,169 @@
+/*=============== BASE ===============*/
+body {
+
+  background-color: hsl(212, 42%, 15%);
+}
+
+
+
+@font-face {
+  font-family: 'Bebas';
+   src: url('../Fonts/BebasNeue-Bold.otf') format('opentype'), url('../Fonts/BebasNeue-Bold.ttf') format('truetype');
+   font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Bebas';
+  src: url('../Fonts/BebasNeue-Regular.otf') format('opentype'), url('../Fonts/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Bebas';
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== CARD ===============*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card__container {
+  padding-block: 1.9rem;
+}
+
+.card__content {
+  margin-inline: 1.75rem;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.card__article {
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.card__image {
+  position: relative;
+  background-color: white;
+  margin-bottom: .0019rem;
+}
+
+.card__data {
+  background-color: #EF009B;
+  padding: 1.5rem 2rem;
+  text-align: left;
+  position: relative;
+  z-index: 10;
+}
+
+.card__img {
+  width: 180px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+}
+
+.card__name {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 700;
+  margin: 0;
+}
+
+.card__description {
+  margin: 0;
+  font-size: .65rem;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.card__buy a {
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(#08A8F0, #08A8F0, #08A8F0, #08A9F0, #08AAF1, #08ABF1, #08ABF1, #08ACF1, #09ADF2, #09AEF2, #09AFF2, #09B0F2, #09B1F3, #09B1F3, #09B2F3, #09B3F3, #09B4F4, #09B5F4, #09B6F4, #09B6F4, #0AB7F5, #0AB8F5,
+  #0AB9F5, #0ABAF5, #0ABBF6, #0ABCF6, #0ABCF6, #0ABDF6, #0ABEF7, #0ABFF7, #0AC0F7, #0AC1F7, #0BC1F8, #0BC2F8,
+  #0BC3F8, #0BC4F8, #0BC5F9, #0BC6F9, #0BC7F9, #0BC7F9, #0BC8FA, #0BC9FA, #0BCAFA, #0BCBFA, #0CCCFB, #0CCCFB,
+  #0CCDFB, #0CCEFB, #0CCFFC, #0CD0FC, #0CD1FC, #0CD2FC, #0CD2FD, #0CD3FD, #0CD4FD, #0CD5FD, #0DD6FE, #0DD7FE,
+  #0DD7FE, #0DD8FE, #0DD9FF, #0DDAFF, #0DDAFF);
+  padding: 5px;
+  border-radius: .3rem;
+}
+
+
+/* Swiper class */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: "";
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: initial;
+  height: initial;
+  font-size: 3rem;
+  color: white;
+}
+
+.swiper-button-prev {
+  left: -1rem;
+}
+
+.swiper-button-next {
+  right: -1rem;
+}
+
+.swiper-pagination-bullet {
+  background-color: hsl(212, 32%, 40%);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: white;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+  .card__data {
+    padding: 1rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 768px) {
+  .card__content {
+    margin-inline: 3rem;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: block;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1120px) {
+  .card__container {
+    max-width: 1120px;
+  }
+
+  .swiper-button-prev {
+    left: -1rem;
+  }
+  .swiper-button-next {
+    right: -1rem;
+  }
+}
